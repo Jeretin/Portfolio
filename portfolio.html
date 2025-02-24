@@ -61,31 +61,102 @@ body {
     margin-left: 2%;
     margin-right: 23%;
     border-radius: 100px;
+    padding-top: 0;
+}
+
+.skills-div{
+    background-color: white;
+    height: 30%;
+    width: 40%;
+    margin-bottom: 2%;
+
+    border-radius: 100px;
+}
+
+.border-div{
+    height: 1%;
+    width: 100%;
+    background-color: black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.game-img{
+    width: 461px;
+    height: 284px;
+    margin-top: 3%;
+    margin-left: 5%;
+    cursor: pointer;
+    box-shadow: 0 4px 32px rgba(133, 124, 124, 0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .game-img{
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+figcaption{
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+
+.header-h1{
+    color: white;
+    font-size: 40px;
+    margin-left: 7%;
+    padding-top: 3%;
 }
 
 </style>
 
 <body>
     <div class="header-image-div red.bg">           <!-- Picture / Name / Something like that -->
-        
 
     </div>
 
     <div class="header-buttons-div">                <!-- Home / Games / Skills / About Me / Contacts -->
-<button class="header-button">Home</button> 
-<button class="header-button">Projects</button>
-<button class="header-button">Skills</button>
-<button class="header-button">About me</button> 
-<button class="header-button">Contacts</button>
+        <button class="header-button">Home</button> 
+        <button class="header-button">Projects</button>
+        <button class="header-button">Skills</button>
+        <button class="header-button">About me</button> 
+        <button class="header-button">Contacts</button>
     </div>
 
-    <div class="box-black-div">                     <!-- Cyberlance The Game -->
-
-
+    <div class="box-black-div"> <!-- Cyberlance The Game -->
+        <h1 class="header-h1">Cyberlance</h1>
+        <img class="game-img" src="Pics/Red_Milk.png" alt="Red Milk" onclick="openModal('modal1', 'Pics/Red_Milk.png')">
+        <figcaption>Click the picture to open it bigger</figcaption>
+    
+        <div class="modal" id="modal1" onclick="closeModal('modal1')">
+            <img id="modalImage1" src="" alt="Suuri kuva">
+        </div>
     </div>
+    
 
     <div class="box-red-div">                       <!-- Red Milk The Game -->
+        <h1 class="header-h1">Red Milk</h1>
+        <img class="game-img" src="Pics/Red_Milk.png" alt="Red Milk" onclick="openModal('modal2', 'Pics/Red_Milk.png')">
+        <figcaption>Click the picture to open it bigger</figcaption>
 
+        <div class="modal" id="modal2" onclick="closeModal('modal2')">
+            <img id="modalImage2" src="" alt="Suuri kuva">
+        </div>
 
     </div>
 
@@ -103,5 +174,31 @@ body {
 
 
     </div>
+
+    <div class="border-div">
+
+
+    </div>
+
+    <div class="skills-div">
+
+    </div>
+
+    <script>
+    function openModal(modalId, imageSrc) {
+    const modal = document.getElementById(modalId);
+    const modalImage = modal.querySelector('img');
+    modalImage.src = imageSrc; // Asetetaan kuvan lähde
+    modal.style.display = 'flex'; // Näytetään modal
+    }
+
+    function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'none'; // Piilotetaan modal
+    }
+
+
+    </script>
+
 
 </body>
