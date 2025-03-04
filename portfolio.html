@@ -43,6 +43,10 @@ body {
 
 .box-red-div{
     background-color: darkred;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 5px;
 
     height: 30%;
     width: 75%;
@@ -54,6 +58,10 @@ body {
 
 .box-black-div{
     background-color: black;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 0px;
     
     height: 30%;
     width: 75%;
@@ -85,7 +93,7 @@ body {
 .game-img{
     width: 461px;
     height: 284px;
-    margin-top: 3%;
+    margin-top: 0%;
     margin-left: 5%;
     cursor: pointer;
     box-shadow: 0 4px 32px rgba(133, 124, 124, 0.2);
@@ -119,9 +127,10 @@ figcaption{
 
 .header-h1{
     color: white;
+    grid-column: 1 / span 2;
+    margin-left: 5%;
+
     font-size: 40px;
-    margin-left: 7%;
-    padding-top: 3%;
 }
 
 .carousel-button {

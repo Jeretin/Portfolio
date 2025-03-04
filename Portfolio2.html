@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio of Jere Pöntynen</title>
+        <link rel="stylesheet" href="Portfolio.css">
+    </head>
+    <body>
+        <div style="position: sticky; top: 0; background: black; z-index: 1000;">
+            <h1>Jere Pöntynen</h1>
+            <div>
+                <button class="header-button">Home</button>
+                <button class="header-button">Projects</button>
+                <button class="header-button">Skills</button>
+                <button class="header-button">About me</button>
+                <button class="header-button">Contacts</button>
+            </div>
+        </div>
+        <div class="div-game" style="margin-left: 2%">  <!-- Red Milk -->  
+            <div>
+                <h1>Red Milk</h1>
+            </div>
+            <div class="div-game-content">                                                                                                                                   
+                <div class="div-game-thumbnail">                                                                                            <!-- Picture of the game -->
+                    <img class="game-thumbnail" src="Pics/RedMilk/Red_Milk.png" onclick="openModal('redMilk', 0)">
+                </div>
+                <div class="div-game-info">                                                                                                <!-- Information about the game --> 
+                    <p><span class="label">Genre:</span> <span class="value"> Horror</span></p>
+                    <p><span class="label">Platform:</span> <span class="value"> PC</span></p>
+                    <p><span class="label">Game Engine:</span> <span class="value"> UE5</span></p>
+                    <p><span class="label">Published:</span> <span class="value"> Autumn 2024</span></p>
+                    <p>Download: </p>
+                </div>
+                <div class="div-game-description">                                                                                          <!-- Description of the game -->
+                    <p>Red Milk is a horror game made by Unreal Engine where you wake up in the barn and have to get out there alive</p>
+                </div>
+            </div>
+            <div class="div-game-content">                                                                                                  
+                <div>                                                                                                                       <!-- Picture texts -->
+                    <p style="color: grey; margin-left: 40px">Click the picture to see more</p>
+                </div>
+                <div>                                                                                                                       <!-- Skills learned (images)-->
+
+                </div>
+            </div>
+        </div>
+        <div class="div-game" style="margin-left: 25%">  <!-- Brews & Brawls -->  
+            <div>
+                <h1>Brews & Brawls</h1>
+            </div>
+            <div class="div-game-content">                                                                                                                                   
+                <div class="div-game-thumbnail">                                                                                            <!-- Picture of the game -->
+                    <img class="game-thumbnail" src="Pics/BrewlsBrawls/BrewsBrawls_GR.png" onclick="openModal('vrGame', 0)">
+                </div>
+                <div class="div-game-info">                                                                                                <!-- Information about the game --> 
+                    <p><span class="label">Genre:</span> <span class="value"> Bar fighting game idk</span></p>
+                    <p><span class="label">Platform:</span> <span class="value"> VR</span></p>
+                    <p><span class="label">Game Engine:</span> <span class="value"> UE5</span></p>
+                    <p><span class="label">Published:</span> <span class="value"> Spring 2024</span></p>
+                    <p>Git: </p>
+                </div>
+                <div class="div-game-description">                                                                                          <!-- Description of the game -->
+                    <p>Brews & Brawls is VR bartendering game in fantasy world. You can serve drinks for goblins, fight with goblins or throw and break objects</p>
+                </div>
+            </div>
+            <div class="div-game-content">                                                                                                  
+                <div>                                                                                                                       <!-- Picture texts -->
+                    <p style="color: grey; margin-left: 40px">Click the picture to see more</p>
+                </div>
+                <div>                                                                                                                       <!-- Skills learned (images)-->
+
+                </div>
+            </div>
+        </div>
+        <div class="div-game" style="margin-left: 2%">  <!-- Ranger's Reserve -->  
+            <div>
+                <h1>Ranger's Reserve</h1>
+            </div>
+            <div class="div-game-content">                                                                                                                                   
+                <div class="div-game-thumbnail">                                                                                            <!-- Picture of the game -->
+                    <img class="game-thumbnail" src="Pics/Rangers_Reserve/Logo.png" onclick="openModal('rangersReserve', 0)">
+                </div>
+                <div class="div-game-info">                                                                                                <!-- Information about the game --> 
+                    <p><span class="label">Genre:</span> <span class="value"> City builder</span></p>
+                    <p><span class="label">Platform:</span> <span class="value"> Android</span></p>
+                    <p><span class="label">Game Engine:</span> <span class="value"> Unity</span></p>
+                    <p><span class="label">Published:</span> <span class="value"> Autumn 2023</span></p>
+                    <p>Download: </p>
+                </div>
+                <div class="div-game-description">                                                                                          <!-- Description of the game -->
+                    <p>
+                        Ranger's Reserve is a city builder game developed for android. In the game you can buy habitat's where you put animals living in. By leveling up
+                        you can access more animals and habitats. You can also feed the animals and level them up.
+                    </p>
+                </div>
+            </div>
+            <div class="div-game-content">                                                                                                  
+                <div>                                                                                                                       <!-- Picture texts -->
+                    <p style="color: grey; margin-left: 40px">Click the picture to see more</p>
+                </div>
+                <div>                                                                                                                       <!-- Skills learned (images)-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+            <button class="close-button" onclick="closeModal()">X</button>
+            <button class="carousel-button prev" onclick="changeMedia(-1)">&#8249;</button>
+            <div class="modal-content" id="modalContent"></div>
+            <button class="carousel-button next" onclick="changeMedia(1)">&#8250;</button>
+        </div> 
+        
+        <script src="script.js"></script>
+    </body>
+</html>
