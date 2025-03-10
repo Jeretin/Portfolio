@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -7,21 +11,24 @@ body{
     font-style: bold;
 }
 
-.header-button{
-    position: sticky;
+.header-button {
+    display: inline-flex; /* Muuttaa linkin nappimaiseksi */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Poistaa alleviivauksen */
     background-color: #a30a0a00;
     color: black;
     height: 50px;
     width: 375px;
     cursor: pointer;
-
     font-weight: bold;
     font-size: 22px;
-
     border: none;
+    text-align: center;
+    border-radius: 5px; /* Jos haluat pyöristetyt reunat */
 }
 
-.header-button:hover{
+.header-button:hover {
     background-color: #bd0c0c;
 }
 
