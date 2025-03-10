@@ -40,7 +40,6 @@ const galleries = {
         {type: "image", src: "Pics/Jere/Jere/Zakynthos_Jere.jpg"},
         {type: "image", src: "Pics/Jere/Jere/Jere_9.jpg"},
         {type: "image", src: "Pics/Jere/Jere/Jere_10.jpg"},
-        {type: "image", src: "Pics/Jere/Jere/Jere_11.jpg"},
         {type: "image", src: "Pics/Jere/Jere/Ruotsi_Jere.jpg"},
         {type: "image", src: "Pics/Jere/Jere/Zakynthos_Jere_2.jpg"},
         {type: "image", src: "Pics/Jere/Jere/Zakynthos_Jere_4.jpg"},
