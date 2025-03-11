@@ -19,13 +19,12 @@ body{
     background-color: #a30a0a00;
     color: black;
     height: 50px;
-    width: 375px;
+    width: 19vw;
     cursor: pointer;
     font-weight: bold;
     font-size: 22px;
     border: none;
     text-align: center;
-    border-radius: 5px; /* Jos haluat pyöristetyt reunat */
 }
 
 .header-button:hover {
@@ -33,7 +32,7 @@ body{
 }
 
 .game-thumbnail{
-    height: 250px;
+    width: 100%;
 }
 
 .contact-text{
@@ -57,11 +56,11 @@ body{
 }
 
 .div-headerthing{
-    margin-top: 5%;
-    margin-left: 12.5%;
+    margin-top: 10vh;
+    margin-left: 12.5vw;
     background-color: darkred;
-    width: 75%;
-    height: 250px;
+    width: 75vw;
+    height: 30vh;
     align-content: center;
 }
 
@@ -102,9 +101,9 @@ body{
 .small-boxes{
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: 700px;
-    margin-left: 10%;
+    width: 25vw;
+    height: 80vh;
+    margin-left: 10;
 }
 
 .div-skills{
@@ -113,16 +112,16 @@ body{
     border-width: 5px;
     border-color: black;
     background-color: #bd0c0c;
-    width: 40%;
-    height: 400px;
+    width: 40vw;
+    height: 40vh;
     text-align: center;
 }
 
 .div-game{
     display: inline-block;
     margin-top: 5%;
-    width: 70%;
-    height: 400px;
+    width: 70vw;
+    height: 50vh;
     background-color: #bd0c0c;
     border-style: solid;
     border-width: 5px;
@@ -131,17 +130,25 @@ body{
 
 .div-game-thumbnail{
     display: inline-block;
+    width: 30%;
+    height: 100%;
     margin-left: 3%;
     cursor: pointer;
 }
 
 .div-game-info{
     display: inline-block;
+    width: 10%;
+    height: 120%;
     font-size: 15px;
+    overflow: auto;
 }
 
 .div-game-description{
     display: inline-block;
+    width: 55%;
+    height: 125%;
+    overflow: auto;
 }
 
 .div-game-content{
