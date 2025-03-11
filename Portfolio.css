@@ -6,8 +6,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #a30a0a;
-    color: black;
+    background-color: #F7F7F7;
+    color: #A8A8A8;
     font-style: bold;
 }
 
@@ -16,8 +16,8 @@ body{
     align-items: center;
     justify-content: center;
     text-decoration: none; /* Poistaa alleviivauksen */
-    background-color: #a30a0a00;
-    color: black;
+    background-color: #7D1128;
+    color: #A8A8A8;
     height: 50px;
     width: 19vw;
     cursor: pointer;
@@ -28,22 +28,16 @@ body{
 }
 
 .header-button:hover {
-    background-color: #bd0c0c;
+    background-color: #7D1128;
 }
 
 .game-thumbnail{
     width: 100%;
 }
 
-.contact-text{
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-}
-
 .contact-box{
     display: inline-block;
-    background-color: #bd0c0c;
+    background-color: #7D1128;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -58,7 +52,7 @@ body{
 .div-headerthing{
     margin-top: 10vh;
     margin-left: 12.5vw;
-    background-color: darkred;
+    background-color: #7D1128;
     width: 75vw;
     height: 30vh;
     align-content: center;
@@ -86,7 +80,7 @@ body{
     border-style: solid;
     border-width: 5px;
     border-color: black;
-    background-color: #bd0c0c;
+    background-color: #7D1128;
 }
 
 .small-box {
@@ -95,7 +89,7 @@ body{
     border-style: solid;
     border-width: 5px;
     border-color: black;
-    background-color: #bd0c0c;
+    background-color: #7D1128;
 }
 
 .small-boxes{
@@ -111,7 +105,7 @@ body{
     border-style: solid;
     border-width: 5px;
     border-color: black;
-    background-color: #bd0c0c;
+    background-color: #7D1128;
     width: 40vw;
     height: 40vh;
     text-align: center;
@@ -122,7 +116,7 @@ body{
     margin-top: 5%;
     width: 70vw;
     height: 50vh;
-    background-color: #bd0c0c;
+    background-color: #7D1128;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -155,6 +149,7 @@ body{
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    height: 55%;
 }
 
 .game-name{
@@ -233,4 +228,185 @@ h1{
     align-items: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.phone-only{
+    display: none;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: white;
+    }
+
+    .div-game{
+        width: 90vw;
+        height: 70vh;
+        margin-left: 5% !important;
+    }
+
+    .div-game-info{
+        width: 20%;
+    }
+
+    .div-game-description{
+        width: 45%;
+    }
+
+    .div-headerthing{
+        margin-left: 0;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    h5{
+        font-size: 10px;
+        margin-left: 0% !important;
+    }
+
+    .phone-only{
+        display: block;
+    }
+
+    .small-boxes{
+        width: 90vw;
+        height: 80vh;
+        margin-left: 5%;
+    }
+
+    .div-about-me{
+        display: block;
+        width: 80vw;
+    }
+
+    .big-box{
+        width: 100% !important;
+        height: 110vh !important;
+    }
+
+    .small-box{
+        width: 80% !important;
+        height: 450h !important;
+        margin-top: 5%;
+    }
+
+    .contact-box{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+    .div-game{
+        width: 90vw;
+        height: 70vh;
+        margin-left: 5% !important;
+    }
+
+    h5{
+        font-size: 10px;
+        margin-left: 0% !important;
+    }
+
+    .div-headerthing{
+        margin-left: 0;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .phone-only{
+        display: block;
+    }
+
+    .small-boxes{
+        width: 90vw;
+        height: 80vh;
+        margin-left: 5%;
+    }
+
+    .div-about-me{
+        display: block;
+        width: 80vw;
+    }
+
+    .big-box{
+        width: 100% !important;
+        height: 110vh !important;
+    }
+
+    .small-box{
+        width: 80% !important;
+        height: 450h !important;
+        margin-top: 5%;
+    }
+
+    .contact-box{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .div-game{
+        width: 90vw;
+        height: 70vh;
+        margin-left: 5% !important;
+    }
+
+    .small-boxes{
+        width: 90vw;
+        height: 80vh;
+        margin-left: 5%;
+    }
+
+    .div-about-me{
+        display: block;
+        width: 80vw;
+    }
+
+    .big-box{
+        width: 100% !important;
+        height: 110vh !important;
+    }
+
+    .small-box{
+        width: 80% !important;
+        height: 450h !important;
+        margin-top: 5%;
+    }
+
+    .contact-box{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .div-game{
+        height: 70vh;
+    }
+
+    .small-boxes{
+        width: 90vw;
+        height: 80vh;
+        margin-left: 5%;
+    }
+
+    .div-about-me{
+        display: block;
+        width: 80vw;
+    }
+
+    .big-box{
+        width: 70% !important;
+        height: 100vh !important;
+    }
+
+    .small-box{
+        display: inline-block;
+        width: 40% !important;
+        height: 450h !important;
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+}
+
+@media (min-width: 1200px){
 }
