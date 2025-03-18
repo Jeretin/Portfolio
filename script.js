@@ -45,6 +45,15 @@ const galleries = {
         {type: "image", src: "Pics/Jere/Jere/Zakynthos_Jere_4.jpg"},
         {type: "image", src: "Pics/Jere/Jere/Zakynthos_Jere_3.jpg"},
     ],
+    cyberlance: [
+        {type: "image", src: "Pics/Cyberlance/Thumbnail.png"},
+        {type: "image", src: "Pics/Cyberlance/PatientData.png"},
+        {type: "image", src: "Pics/Cyberlance/Minigame.png"},
+        {type: "video", src: "Pics/Cyberlance/Cyberlance_Wireminigame.mp4"},
+        {type: "image", src: "Pics/Cyberlance/ScoreView.png"},
+        {type: "image", src: "Pics/Cyberlance/GameLength.png"},
+        {type: "video", src: "Pics/Cyberlance/Cyberlance_Options.mp4"},
+    ],
 }
 let currentGallery = [];
 let currentImage = 0;
